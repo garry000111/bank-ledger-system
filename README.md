@@ -203,16 +203,23 @@ Transaction
 # 📂 Project Structure
 
 ```text
-src
+Bank-Ledger-System
 │
-├── config/
-├── controllers/
-├── middleware/
-├── models/
-├── routes/
-├── services/
-├── utils/
-├── app.js
+├── node_modules/
+│
+├── src/
+│   ├── controllers/
+│   ├── db/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   └── app.js
+│
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
 └── server.js
 ```
 
@@ -236,7 +243,7 @@ src
 |--------|----------|
 | POST | `/api/accounts` |
 | GET | `/api/accounts` |
-| GET | `/api/accounts/:accountId/balance` |
+| GET | `/api/accounts/balance/:accountId` |
 
 ---
 
